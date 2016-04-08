@@ -69,3 +69,10 @@ To ease review of pull requests that affect legacy code:
 
 Abiding by these guidelines will make it much easier for your teammates to efficiently review your pull requests.
 
+## CSS, SCSS, and LESS
+
+- Always include a docblock comment at the start of each file describing what
+the file does and anything non-obvious about the component.
+- Include comments to describe the results of non-obvious rulesets, such as
+complex layouts or items that change drastically over different screen sizes.
+- Run `scss-lint` and follow the rules whenever possible.
