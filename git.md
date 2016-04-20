@@ -65,6 +65,8 @@ Like commit messages, pull request titles should start with `Issue #___:` and be
 - Specify any specific issues that you want developers doing peer review to be sure to investigate thoroughly.
 - Give a timeframe for review.
 
+After you've written your pull request, look it over and ensure that all the important details are also contained in code comments and commit messages.
+
 Once the pull request is open, you should also assign a specific reviewer in GitHub, set the applicable Redmine task(s) status to `Developer Review`, assign those
  tasks to the reviewer, and paste a link to the pull request in the `GitHub PR` field. If the request is urgent, you should also communicate with the reviewing developer
  via some other channel (Slack, in person, etc) rather than relying on them to get GitHub or Redmine notifications.
