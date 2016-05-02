@@ -82,8 +82,6 @@ To keep code as light as possible:
 
 To ensure that your code is maintainable by future developers (including Future You):
 
-- Always include a docblock comment at the start of each file describing what
-the file does and anything non-obvious about the component.
-- Include comments to describe the results of non-obvious rulesets, such as
-complex layouts or items that change drastically across screen sizes.
+- Always include a docblock comment at the start of each file describing what the file does and anything non-obvious about the component.
+- Include comments to describe the results of non-obvious rulesets, such as complex layouts or items that change drastically across screen sizes.
 - Use the [BEM class naming methodology](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/). This makes the DOM more readable, and means you don't need to include a comment in the code indicating what a selector is targeting.
