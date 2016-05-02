@@ -10,7 +10,13 @@ settings.php set up, etc
 
 ## Theming
 
+### Theme development
+
+Drupal.org's [theming guide](https://www.drupal.org/documentation/theme) is a vast resource for theming best practices and techniques. The guide is split between Drupal 6 & 7, and Drupal 8.
+
 ### Best practices
+
+Start by reviewing the theming guide's [best practices section](https://www.drupal.org/node/341707).
 
 #### Keep logic out of template files
 
