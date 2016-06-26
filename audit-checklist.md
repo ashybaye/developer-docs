@@ -4,7 +4,7 @@ When Savas Labs receives a work-in-progress project, we will review critical fun
 
 ## Goals of site audits
 
-- Identify risks so we can mitigate their impact 
+- Identify risks so we can mitigate their impact
 - Prepare ourselves for more accurate estimation
 - Vet assumptions made by us and our clients
 - Accurately quantify the amount of work remaining on the project
@@ -35,7 +35,7 @@ When Savas Labs receives a work-in-progress project, we will review critical fun
 - Patches, if any, are documented and in a `/patches` directory
 - Contrib/custom code is split into (sites/all)/modules/contrib and (sites/all)/modules/custom
 - Credentials are not stored in version control
-- Modules and themes live in proper place in Drupal 
+- Modules and themes live in proper place in Drupal
 
 #### Custom code
 
