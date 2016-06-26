@@ -16,5 +16,6 @@ Welcome to Savas Labs Developer Docs!
       projectmanagement
    redmine
    time-entry
+   audit-checklist
    CONTRIBUTING
 

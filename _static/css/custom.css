@@ -30,6 +30,12 @@ h2 {
   color: #9e023b;
 }
 
+h4,
+h6,
+footer {
+  color: #7D7F94;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.55em;
@@ -46,11 +52,14 @@ a:focus {
 }
 
 /* Add underline to inline links. */
-p a {
+p a,
+li a {
   border-bottom: .1em solid rgba(15, 121, 147, .1);
 }
 p a:hover,
-p a:focus {
+p a:focus,
+li a:hover,
+li a:focus {
   border-bottom: .1em solid rgba(15, 121, 147, 1);
 
 }
