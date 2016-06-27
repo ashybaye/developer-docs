@@ -69,3 +69,19 @@ To ease review of pull requests that affect legacy code:
 
 Abiding by these guidelines will make it much easier for your teammates to efficiently review your pull requests.
 
+## CSS and its preprocessors
+
+CSS bloat (i.e. CSS that contains unneeded and/or repeated code) can cause performance issues and make future development more difficult and time-consuming.
+
+To keep code as light as possible:
+
+- Follow the [DRY principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). If you find yourself repeating code, find a way to make that code modular. This is easy to achieve with Sass by using [mixins](http://sass-lang.com/guide#topic-6) and [abstract classes](http://thesassway.com/intermediate/using-object-oriented-css-with-sass).
+- [Learn when to use a mixin and when to use an abstract class](http://csswizardry.com/2014/11/when-to-use-extend-when-to-use-a-mixin/) (TL;DR: You should almost always use a mixin.)
+- Always use as non-specific a selector as possible to avoid having to overwrite your own CSS. [CSS Tricks explains specificity well.](https://css-tricks.com/specifics-on-css-specificity/)
+- When writing SCSS, run `scss-lint` and follow the rules whenever possible. If you do need to make an exception (e.g. you need to use `!important` to override a default Drupal CSS rule that uses `!important`), leave a comment explaining why you're doing it.
+
+To ensure that your code is maintainable by future developers (including Future You):
+
+- Always include a docblock comment at the start of each file describing what the file does and anything non-obvious about the component.
+- Include comments to describe the results of non-obvious rulesets, such as complex layouts or items that change drastically across screen sizes.
+- Use the [BEM class naming methodology](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/). This makes the DOM more readable, and means you don't need to include a comment in the code indicating what a selector is targeting.

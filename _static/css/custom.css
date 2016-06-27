@@ -37,7 +37,7 @@ footer {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.55em;
 }
 
@@ -76,7 +76,11 @@ li a:focus {
 .rst-content .section ol li,
 .rst-content ol.arabic li,
 article ol li {
-  padding-bottom: .25em;
+  padding-bottom: .5em;
+}
+
+.document li {
+  padding-bottom: .5em;
 }
 
 /* See https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
