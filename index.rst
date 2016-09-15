@@ -6,8 +6,7 @@ Welcome to Savas Labs Developer Docs!
    :caption: Topics
    :numbered:
 
-   ..
-      drupal
+   drupal
    git
    code-standards
    ..
