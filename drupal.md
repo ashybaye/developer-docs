@@ -1,5 +1,21 @@
 # Drupal
 
+This section is a work in progress!
+
+## Security updates
+
+Our general policy is:
+
+1. Only update contrib modules with security advisories (i.e. do not update all contrib modules to their latest stable release)
+2. Submit a pull request with one commit per module updated, to make reviewing changes (and reverting, if need be) easier
+
+When updating sites without test coverage, be especially cautious. When updating contrib modules, always:
+
+1. Review the issue queue for the module and review bug reports that exist for the version being updated to
+2. Review the code changes to the module and note if any backwards incompatible API changes have been made
+
+Note that in some cases, the security advisory may not apply to the contributed module as used on the site (i.e. "Only users with `Administer flags` can exploit this vulnerability"), in which case using [Update Advanced](https:/www.drupal.org/project/update_advanced) to ignore the update may be a good option.
+
 ## Repository structure
 
 ## Drupal root structure
