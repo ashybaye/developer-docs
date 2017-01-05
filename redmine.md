@@ -1,6 +1,6 @@
 # Redmine
 
-Redmine is our project management tool at [pm.savalabs.com](https://pm.savaslabs.com). It is **the** authoritative location for project information. It is ideal to flow as much client communication through the tool as possible for the purposes of universally-shared documentation outside of personal mailboxes.
+[Redmine](http://www.redmine.org) is our project management tool at [pm.savalabs.com](https://pm.savaslabs.com). It is **the** authoritative location for project information. It is ideal to flow as much client communication through the tool as possible for the purposes of universally-shared documentation outside of personal mailboxes.
 
 This document won't attempt to explain all of Redmine's features — if you haven't already done so, take a pause now and read through the [Redmine User Guide](http://www.redmine.org/projects/redmine/wiki/Guide) which will answer many of your questions.
 
@@ -8,9 +8,19 @@ This document is focused on the Redmine workflow that we use in-house.
 
 ## Configuring a project
 
+### Project organization
+
+All projects should be all organized with a project / sub-project hierarchy. The top level project should be the client name, and *not* have an issue tracker. Example: `https://pm.savaslabs.com/projects/client`. (The Harvest Project ID for this top level project can map to any of the client's projects in Harvest.) Each sub-project should map to a specific scope of work with its own Harvest Project. For example a project might have a "Phase 1" project that is linked to a Phase 1 Harvest Project, and a "Maintenance" project that is linked to a "Maintenance" Harvest Project.
+
+Versions should be configured to be shared across the project, so that software releases (e.g. 1.0.0) can track issues that are filed in Maintenance and another project, e.g. Phase 1.
+
+The top level project should have a Wiki that contains all the information for the project. It's not easy to move a wiki across projects, so existing projects that become sub-projects can retain their wiki pages. But moving forward, all new sub-projects should *not* have the wiki module enabled, and all wiki content should live in the top level project.
+
+### Set up tasks
+
 - In the description field, document where important assets are like important git branches, dev/staging environments, etc
 - Link Slack channel for updates to post to. If there is a lot of activity on the project, it's customary to create a `[project]-noise` channel to push to
-- Set the Harvest project ID field for time-tracking purposes
+- Set the Harvest project ID field for time-tracking purposes. You can configure multiple Harvest project IDs. Once a project ID has been set and time has been tracked to a project, please don't remove the project ID reference - just add a new project ID to the list.
 
 ## The makings of the _perfect_ task
 
