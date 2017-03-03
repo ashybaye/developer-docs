@@ -10,11 +10,21 @@ This document is focused on the Redmine workflow that we use in-house.
 
 ### Project organization
 
-All projects should be all organized with a project / sub-project hierarchy. The top level project should be the client name, and *not* have an issue tracker. Example: `https://pm.savaslabs.com/projects/client`. (The Harvest Project ID for this top level project can map to any of the client's projects in Harvest.) Each sub-project should map to a specific scope of work with its own Harvest Project. For example a project might have a "Phase 1" project that is linked to a Phase 1 Harvest Project, and a "Maintenance" project that is linked to a "Maintenance" Harvest Project.
+All projects should be organized with a project/sub-project hierarchy. For example:
 
-Versions should be configured to be shared across the project, so that software releases (e.g. 1.0.0) can track issues that are filed in Maintenance and another project, e.g. Phase 1.
+> Savas Labs (client/parent project)
+>
+>  - Savas Labs Maintenance (sub-project)
+>  - Savas Labs Phase 1 (sub-project)
+>  - Savas Labs Phase 2 (sub-project)
 
-The top level project should have a Wiki that contains all the information for the project. It's not easy to move a wiki across projects, so existing projects that become sub-projects can retain their wiki pages. But moving forward, all new sub-projects should *not* have the wiki module enabled, and all wiki content should live in the top level project.
+The top level project should be the client name, and _not_ have an issue tracker. Example: `https://pm.savaslabs.com/projects/client`
+
+Each sub-project should map to a specific scope of work with its own Harvest Project ID. For example, under the same top level client project, a "Phase 1" Redmine sub-project will be linked to it's specific "Phase 1" Harvest ID, while a "Maintenance" sub-project will be linked to a separate "Maintenance" Harvest ID.
+
+Target Versions should be configured to be shared across sub-projects. This way software releases (e.g. 1.0.0) can track issues that are filed in "Maintenance" or "Phase 1."
+
+The top level project should have a Wiki that contains all the information for the project and it's sub-projects. It's not easy to move a Wiki across projects, so existing projects that become sub-projects can retain their wiki pages. But as of Feb 2017, all new sub-projects should _not_ have the Wiki module enabled, and all Wiki content should live in the Top Level Project.
 
 ### Set up tasks
 
