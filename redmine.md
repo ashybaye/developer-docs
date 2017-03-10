@@ -13,10 +13,9 @@ This document is focused on the Redmine workflow that we use in-house.
 All projects should be organized with a project/sub-project hierarchy. For example:
 
 > Savas Labs (client/parent project)
->
->  - Savas Labs Maintenance (sub-project)
->  - Savas Labs Phase 1 (sub-project)
->  - Savas Labs Phase 2 (sub-project)
+> - Savas Labs Maintenance (sub-project)
+> - Savas Labs Phase 1 (sub-project)
+> - Savas Labs Phase 2 (sub-project)
 
 The top level project should be the client name, and _not_ have an issue tracker. Example: `https://pm.savaslabs.com/projects/client`
 
