@@ -9,6 +9,7 @@ Welcome to Savas Labs Developer Docs!
    drupal
    git
    code-standards
+   testing
    ..
       drupal-vm
    ..
