@@ -36,7 +36,7 @@ Example usage in a Makefile:
 phpcs_config = --ignore=*.css,*.min.js,*features.*.inc,*.svg,*.jpg,*.json,*.woff*,*.ttf,*.md \
 --exclude=Drupal.InfoFiles.AutoAddedKeys
 
-phpcs:  ##@test	Run code standards check.
+phpcs: ##@test Run code standards check.
   docker run --rm -v $$(pwd):/work skilldlabs/docker-phpcs-drupal phpcs --standard=Drupal \
   tests drupal/sites/all/modules/custom $(phpcs_config)
 ```
