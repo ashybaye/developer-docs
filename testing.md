@@ -15,7 +15,7 @@ Why do we write tests?
 - Define the feature to be built or the bug to be fixed
 - Improve our code by checking against different assumptions
 - Catch regressions
-- Help future-you and or co-workers with refactoring 
+- Help future-you and or co-workers with refactoring
 - A green :heavy_check_mark: on your GitHub pull request feels good
 
 ## Types of tests
@@ -28,7 +28,7 @@ All projects should include a lint check as part of the automated testing proces
 
 ### Coding standards
 
-All of the custom code we produce must adhere to coding standards. For Drupal projects, this involves running the `phpcs` command with the `--standard=Drupal` option. 
+All of the custom code we produce must adhere to coding standards. For Drupal projects, this involves running the `phpcs` command with the `--standard=Drupal` option.
 
 Example usage in a Makefile:
 
@@ -36,9 +36,9 @@ Example usage in a Makefile:
 phpcs_config = --ignore=*.css,*.min.js,*features.*.inc,*.svg,*.jpg,*.json,*.woff*,*.ttf,*.md \
 --exclude=Drupal.InfoFiles.AutoAddedKeys
 
-phpcs:	##@test	Run code standards check.
-	docker run --rm -v $$(pwd):/work skilldlabs/docker-phpcs-drupal phpcs --standard=Drupal \
-    tests drupal/sites/all/modules/custom $(phpcs_config)
+phpcs:  ##@test	Run code standards check.
+  docker run --rm -v $$(pwd):/work skilldlabs/docker-phpcs-drupal phpcs --standard=Drupal \
+  tests drupal/sites/all/modules/custom $(phpcs_config)
 ```
 
 All projects should include a coding standards check as part of the automated testing process.
