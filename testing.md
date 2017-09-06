@@ -98,7 +98,7 @@ Using Behat to capture every permutation of a feature is difficult and costly to
 
 ### Manual testing
 
-We should avoid manual testing as the primary means for verifying a feature's functionality, or the correctness of a bug fix. This is because the process is error prone, time consuming, and often tedious. 
+We should avoid manual testing as the primary means for verifying a feature's functionality, or the correctness of a bug fix. This is because the process is error prone, time consuming, and often tedious.
 
 That aside, it's good practice in bug reports and pull requests to provide a summary of steps to test a feature or reproduce a bug. Manual verification can help developers and code reviewers confirm that no new, uncaught regressions have occurred. This is also a good opportunity for the code reviewer to step back and assess the feature or fix in the broader context of the project.
 
