@@ -51,7 +51,7 @@ We have examples of client projects to draw upon for example configuration of Be
 
 #### Use Behat as a communication and discovery tool
 
-Involve the client in defining the scenarios and features. [This page](http://behat.org/en/latest/quick_start.html) contains an excellent overview of how you might do this. You should work with the client to define what the features/scenarios under development are before any code is written.
+Involve the client in defining the scenarios and features. [This page](http://behat.org/en/latest/quick_start.html) contains a good overview of how you might do this. You should work with the client to define what the features/scenarios under development are before you write any code.
 
 #### Write the feature/scenario definition before you build the functionality
 
@@ -65,25 +65,25 @@ Consider the following Behat step:
 And I click on the element with XPath '//*[@id="edit-submit"]'
 ```
 
-While we can read this and infer that `edit-submit` must be referring to the submit button on the page, it is much better to have something like this:
+While we can read this and infer that `edit-submit` must be referring to the submit button on the page, it's much better to have something like this:
 
 ``` cucumber
 And I submit the form
 ```
 
-Then, in your `FeatureContext.php` file, you could implement the code which clicks on the element with the XPath.
+Then, in your `FeatureContext.php` file, you could write the code which clicks on the element with the XPath.
 
-The idea is to have a terse description of what the feature should do to provide for a shared understanding between the client and the developer. In this case, the client doesn't need to know about XPath or particular selectors; they will want to know what happens when the form is submitted.
+The idea is to have a terse description of what the feature should do to provide for a shared understanding between the client and the developer. In this case, the client doesn't need to know about XPath or particular selectors; they will want to know what happens when someone submits the form.
 
-#### Avoid adding too many Behat tests
+#### Avoid adding more Behat tests than necessary
 
-It is tempting to test everything with Behat. But it's important to counter-balance this with the fact that Behat tests are more difficult to maintain and slower to run than unit tests. Consider whether a unit test is more appropriate before adding a new Behat test.
+It's tempting to test everything with Behat. But it's important to counter-balance this with the fact that Behat tests are more difficult to maintain and slower to run than unit tests. Consider whether a unit test is more appropriate before adding a new Behat test.
 
-### Unit
+### Unit testing
 
-Unit tests should be included on custom development for Drupal 8 projects.
+We should almost always include unit tests should on custom development for Drupal 8 projects.
 
-Unit testing vanilla Drupal 7 code is not possible. However, by making use of the the [XAutoload](https://www.drupal.org/project/xautoload) module, one can write object-oriented, unit-testable code.
+Unit testing vanilla Drupal 7 code is not possible. But by making use of the [XAutoload](https://www.drupal.org/project/xautoload) module, one can write object-oriented, unit-testable code.
 
 We use [PHPUnit](http://phpunit.de/) for unit tests.
 
@@ -93,11 +93,11 @@ The [phpspec](http://www.phpspec.net/en/stable/) project assists developers in d
 
 #### Use unit testing in conjunction with Behat tests
 
-Using Behat to capture every permutation of a feature is difficult and costly to implement. It is more efficient to use unit tests to handle testing the different inputs/outputs, and use Behat for a broader overview of the feature.
+Using Behat to capture every permutation of a feature is difficult and costly to do. It's more efficient to use unit tests to handle testing the different inputs/outputs, and use Behat for a broader overview of the feature.
 
-### Manual
+### Manual testing
 
-Manual testing should be avoided as the primary means for verifying a feature's functionality, or the correctness of a bug fix. This is because the process is error prone, time consuming, and often tedious. 
+We should avoid manual testing as the primary means for verifying a feature's functionality, or the correctness of a bug fix. This is because the process is error prone, time consuming, and often tedious. 
 
 That aside, it's good practice in bug reports and pull requests to provide a summary of steps to test a feature or reproduce a bug. Manual verification can help developers and code reviewers confirm that no new, uncaught regressions have occurred. This is also a good opportunity for the code reviewer to step back and assess the feature or fix in the broader context of the project.
 
