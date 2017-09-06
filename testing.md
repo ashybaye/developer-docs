@@ -9,6 +9,7 @@ Testing is a critical part of the development process at Savas Labs:
 - All projects should have automated tests
 - New features added to a codebase should almost always come with tests to verify their functionality
 - Bug fixes should almost always contain new tests or fixes to existing tests
+- We can manage technical debt through good practices in automated testing
 
 Why do we write tests?
 
@@ -100,6 +101,10 @@ Using Behat to capture every permutation of a feature is difficult and costly to
 We should avoid manual testing as the primary means for verifying a feature's functionality, or the correctness of a bug fix. This is because the process is error prone, time consuming, and often tedious. 
 
 That aside, it's good practice in bug reports and pull requests to provide a summary of steps to test a feature or reproduce a bug. Manual verification can help developers and code reviewers confirm that no new, uncaught regressions have occurred. This is also a good opportunity for the code reviewer to step back and assess the feature or fix in the broader context of the project.
+
+### Not testing
+
+Circumstances exist in which including tests in a feature or a bug fix is not possible. In these cases, the developer and project manager should confer with the CTO and/or the Principal Director.
 
 ## Travis CI
 
