@@ -10,10 +10,6 @@ Welcome to Savas Labs Developer Docs!
    git
    code-standards
    testing
-   ..
-      drupal-vm
-   ..
-      projectmanagement
    redmine
    time-entry
    audit-checklist
