@@ -2,8 +2,6 @@
 
 ## Introduction
 
-> Code without tests is broken by design. ([Citation](http://toastdriven.com/blog/2011/apr/10/guide-to-testing-in-django/))
-
 Testing is a critical part of the development process at Savas Labs:
 
 - All projects should have automated tests
@@ -82,7 +80,7 @@ It's tempting to test everything with Behat. But it's important to counter-balan
 
 ### Unit testing
 
-We should almost always include unit tests should on custom development for Drupal 8 projects.
+We should almost always include unit tests on custom development for Drupal 8 projects.
 
 Unit testing vanilla Drupal 7 code is not possible. But by making use of the [XAutoload](https://www.drupal.org/project/xautoload) module, one can write object-oriented, unit-testable code.
 
@@ -113,3 +111,7 @@ We tie the above together using an automated testing tool called [Travis CI](htt
 Because we have standardized our development environments on a combination of Docker, AWS S3 for seed databases, and a Makefile for setup, configuring Travis CI is pretty straightforward, and does not differ in substance from local setup instructions.
 
 All projects with tests should have those tests run on a per branch and/or per pull request basis.
+
+## Integration with project management
+
+When creating issues in Redmine for completion of a feature/scenario, the best practice is to create a subtask for the test or tests required for that issue. That way, we can add more detail to the requirements for the test, as well as an estimate. Categorize the subtask as "Test" so that the issue queue is filterable by test related issues, and the total estimated/spent time on tests is visible.
