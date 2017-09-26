@@ -38,7 +38,7 @@ In addition to running PHP_CodeSniffer from the command line, it is useful to se
 
 If you use PhpStorm as your IDE, then you can use PhpStorm's built-in coding assistance to indicate violations of coding standards as you write or review code.
 
-While JetBrains (the team behind PHPStorm) provide documentation for [Code Sniffer and Coder integration](https://confluence.jetbrains.com/display/PhpStorm/Drupal+Development+using+PhpStorm#DrupalDevelopmentusingPhpStorm-CoderandPHPCodeSnifferIntegration), you may find that [these instructions](http://justdrupal.com/php-code-sniffer-in-phpstorm-for-drupal/) are more clear and up to date.
+JetBrains (the team behind PHPStorm) provide documentation for [Code Sniffer and Coder integration](https://confluence.jetbrains.com/display/PhpStorm/Drupal+Development+using+PhpStorm#DrupalDevelopmentusingPhpStorm-CoderandPHPCodeSnifferIntegration).
 
 We also recommend updating PhpStorm's default syntax and formatting to conform with Drupal coding standards, further easing compliance with the standards. [This guide](https://www.drupal.org/node/1962108) documents steps for configuring PhpStorm for Drupal.
 
