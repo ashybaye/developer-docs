@@ -16,6 +16,16 @@
 
 Those with relevant permissions may visit [IAM](https://console.aws.amazon.com/iam/home?region=us-east-1) and create/modify users, groups and policies. It's a good idea to copy existing policies and add to existing groups if possible.
 
+### Limited admins
+
+The following hierarchy exists:
+
+1. Root user account. Should rarely be used. Can do anything.
+1. Admin accounts (2 exist). Can do anything.
+1. [Limited admin accounts](https://aws.amazon.com/blogs/security/how-to-create-a-limited-iam-administrator-by-using-managed-policies/) (2 exist). Can manage a restricted set of policies, groups, users, and don't have full access.
+
+All admins should use multi-factor authentication.
+
 ### Policies
 
 Generally speaking, try to assign policies that give the minimum set of permissions needed to perform a task. For example if a user (machine or human) needs access to download the seed database from a directory in a bucket, this will suffice:
