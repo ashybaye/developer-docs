@@ -62,7 +62,7 @@ n.b. the above will _not_ allow the user to do `aws s3 ls` on that directory, bu
 
 If you add a new user, you'll get an Access Key ID and a Secret Access Key. You may simulate their access by running this in your terminal:
 
-```
+``` sh
 export AWS_ACCESS_KEY_ID={id}
 export AWS_SECRET_ACCESS_KEY={secret}
 ```
