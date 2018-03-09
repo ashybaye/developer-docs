@@ -22,7 +22,7 @@ The following hierarchy exists:
 
 1. Root user account. Should rarely be used. Can do anything.
 1. Admin accounts (2 exist). Can do anything.
-1. [Limited admin accounts](https://aws.amazon.com/blogs/security/how-to-create-a-limited-iam-administrator-by-using-managed-policies/) (2 exist). Can manage a restricted set of policies, groups, users, and don't have full access.
+1. [Limited admin accounts](https://aws.amazon.com/blogs/security/how-to-create-a-limited-iam-administrator-by-using-managed-policies/) (none currently exist). Can manage a restricted set of policies, groups, users, and don't have full access.
 
 All admins should use multi-factor authentication.
 
