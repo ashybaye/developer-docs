@@ -8,7 +8,7 @@ Accurate, informative and timely time entry is a crucial task for successful pro
 
 We use [Harvest]( https://savaslabs.harvestapp.com/welcome) to record time.
 
-Harvest is best used in real-time, as you switch from task to task. If you do this, at the end of the work day you have a (mostly) complete log of where you spent your time, and can spend a few minutes tidying up time entries and descriptions. In any case, time entries for a given day should be entered by midnight of that same day. This is important for project planning as well as for syncing entries with Redmine.
+Harvest is best used in real-time, as you switch from task to task. If you do this, at the end of the work day you have a (mostly) complete log of where you spent your time, and can spend a few minutes tidying up time entries and descriptions. In any case, **time entries for a given day must be entered by midnight of that same day**. This is important for project planning as well as for syncing entries with Redmine.
 
 ### Tools
 
