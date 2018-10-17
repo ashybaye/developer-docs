@@ -31,7 +31,7 @@ This references the issue, and outlines what specific aspects were worked on:
 
 > **Issue #911**: Updates for scenarios where users register for online workshops on behalf of attendees other than themselves. This involves updating notification emails and reminder emails, adding a confirmation email, and modifying how online workshops are displayed on the user profile online workshop tab.
 
-In order for our nightly sync from Harvest time into our PM system to work, you must include in the time entry description the pattern of `#[issue-number]`. That format is the hash symbol: `#` immediately followed by issue number with no space as shown above. If one includes multiple instances of this pattern, which one should avoid, the first one will be used for the sync.
+In order for our nightly sync from Harvest time into our PM system to work, **you must include in the time entry description the pattern of `#[issue-number]`**. That format is the hash symbol: `#` immediately followed by issue number with no space as shown above. If one includes multiple instances of this pattern, which one should avoid, the first one will be used for the sync.
 
 This is much more informative than a time entry that simply reads "Issue #911" — while that provides some context, it then requires the project manager to look up the entry in Redmine, and still wouldn't tell them what specifically was worked on.
 
